@@ -1,9 +1,58 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System.Linq;
+﻿using DesignPatterns.Creational.FactoryPattern;
+using DesignPatterns.Creational.SingletonPattern;
+//using DesignPatterns.Creational.FactoryMethodPattern;
+using DesignPatterns.Creational.AbstractFactory;
+using DesignPatterns.Creational.BuilderPattern;
+using DesignPatterns.Creational.PrototypePattern;
 
-List<string> dbRoles = new(){"Admin", "User"};
-List<string> roles = new(){"SuperAdmin"};
+#region Factory Design Pattern example
+ICreditCardFactory factory = new PlatinumFactory(); // Change factory type as needed
+ICreditCard card = factory.CreateCreditCard();
 
-bool result = dbRoles.Any(role=> roles.Contains(role));
+Console.WriteLine($"Card Type: {card.GetCardType()}");
+Console.WriteLine($"Credit Limit: ${card.GetCreditLimit()}");
+Console.WriteLine($"Annual Charge: ${card.GetAnnualCharge()}");
+#endregion
 
-Console.WriteLine(result);
+#region  Factory method design pattern
+/*
+CreditCardFactory factory = new MoneyBackFactory(); // Change factory type as needed
+ICreditCard card = factory.CreateCreditCard();
+
+Console.WriteLine($"Card Type: {card.GetCardType()}");
+Console.WriteLine($"Credit Limit: ${card.GetCreditLimit()}");
+Console.WriteLine($"Annual Charge: ${card.GetAnnualCharge()}");
+*/
+#endregion
+
+#region  Abstract factory design pattern
+IVehicleFactory hondaFactory = new HondaFactory();
+var hondaBike = hondaFactory.CreateBike();
+var hondaCar = hondaFactory.CreateCar();
+
+// Create a Toyota factory
+IVehicleFactory toyotaFactory = new ToyotaFactory();
+var toyotaBike = toyotaFactory.CreateBike();
+var toyotaCar = toyotaFactory.CreateCar();
+
+#endregion
+
+#region Builder design pattern
+var builder = new HawaiianPizzaBuilder();
+var director = new Director(builder);
+
+director.Construct();
+var pizza = builder.GetResult();
+
+Console.WriteLine($"Hawaiian Pizza: {pizza.PartA}, {pizza.PartB}");
+#endregion
+
+#region Prototype design pattern
+Employee emp1 = new Employee { Name = "John", Department = "HR" };
+Employee emp2 = emp1; // Cloning emp1
+
+emp2.Name = "Alice"; // Changes emp2's name, but emp1 remains unchanged
+
+Console.WriteLine($"Employee 1: {emp1.Name}, {emp1.Department}");
+Console.WriteLine($"Employee 2: {emp2.Name}, {emp2.Department}");
+#endregion
