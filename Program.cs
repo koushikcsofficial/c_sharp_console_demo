@@ -48,16 +48,6 @@ var pizza = builder.GetResult();
 Console.WriteLine($"Hawaiian Pizza: {pizza.PartA}, {pizza.PartB}");
 #endregion
 
-#region Prototype design pattern
-Employee emp1 = new Employee { Name = "John", Department = "HR" };
-Employee emp2 = emp1; // Cloning emp1
-
-emp2.Name = "Alice"; // Changes emp2's name, but emp1 remains unchanged
-
-Console.WriteLine($"Employee 1: {emp1.Name}, {emp1.Department}");
-Console.WriteLine($"Employee 2: {emp2.Name}, {emp2.Department}");
-#endregion
-
 #region Fluent Builder Design pattern
 /*
 var employee = new FluentEmployee()
@@ -66,4 +56,14 @@ var employee = new FluentEmployee()
     .SetAge(30)
     .Build();
 */
+#endregion
+
+#region Prototype design pattern
+Employee emp1 = new Employee { Name = "John", Department = "HR" };
+Employee emp2 = emp1; // Cloning emp1
+
+emp2.Name = "Alice"; // Changes emp2's name, but emp1 remains unchanged
+
+Console.WriteLine($"Employee 1: {emp1.Name}, {emp1.Department}");
+Console.WriteLine($"Employee 2: {emp2.Name}, {emp2.Department}");
 #endregion
