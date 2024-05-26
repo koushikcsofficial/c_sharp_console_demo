@@ -4,6 +4,7 @@ using DesignPatterns.Creational.SingletonPattern;
 using DesignPatterns.Creational.AbstractFactory;
 using DesignPatterns.Creational.BuilderPattern;
 using DesignPatterns.Creational.PrototypePattern;
+//using DesignPatterns.Creational.FluentBuilderPattern;
 
 #region Factory Design Pattern example
 ICreditCardFactory factory = new PlatinumFactory(); // Change factory type as needed
@@ -55,4 +56,14 @@ emp2.Name = "Alice"; // Changes emp2's name, but emp1 remains unchanged
 
 Console.WriteLine($"Employee 1: {emp1.Name}, {emp1.Department}");
 Console.WriteLine($"Employee 2: {emp2.Name}, {emp2.Department}");
+#endregion
+
+#region Fluent Builder Design pattern
+/*
+var employee = new FluentEmployee()
+    .SetFirstName("John")
+    .SetLastName("Doe")
+    .SetAge(30)
+    .Build();
+*/
 #endregion
