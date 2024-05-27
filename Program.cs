@@ -4,7 +4,9 @@ using DesignPatterns.Creational.SingletonPattern;
 using DesignPatterns.Creational.AbstractFactory;
 using DesignPatterns.Creational.BuilderPattern;
 using DesignPatterns.Creational.PrototypePattern;
+using DesignPatterns.ComboPatterns.FactoryMethodAndObserver;
 //using DesignPatterns.Creational.FluentBuilderPattern;
+using ProgramingPractice;
 
 #region Factory Design Pattern example
 ICreditCardFactory factory = new PlatinumFactory(); // Change factory type as needed
@@ -66,4 +68,25 @@ emp2.Name = "Alice"; // Changes emp2's name, but emp1 remains unchanged
 
 Console.WriteLine($"Employee 1: {emp1.Name}, {emp1.Department}");
 Console.WriteLine($"Employee 2: {emp2.Name}, {emp2.Department}");
+#endregion
+
+#region Factory method with observer pattern
+ReportManager manager = new ReportManager(new SalesReportFactory());
+
+// Register observers (e.g., Email notification & Dashboard update)
+IReportObserver notificationSystem = new ReportNotificationSystem();
+IReportObserver dashboardUpdater = new DashboardUpdater();
+manager.RegisterObserver(notificationSystem);
+manager.RegisterObserver(dashboardUpdater);
+
+// Generate a sales report
+FinancialReport report = manager.GenerateReport("Sales");
+
+// Example usage of the report
+Console.WriteLine("Report Title: {report.Title}");
+Console.WriteLine("Generated Date: {report.GeneratedDate}");
+#endregion
+
+#region NonRepeatCharacters program solution
+Console.WriteLine(NonRepeatChatacters.solution("Koushik"));
 #endregion
