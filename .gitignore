@@ -1,2 +1,7 @@
-/bin
-/obj
+ConsoleDemo/bin/
+ConsoleDemo/obj/
+ConsoleDemo.Tests/bin/
+ConsoleDemo.Tests/obj/
+bin/
+obj/
+.vs/
