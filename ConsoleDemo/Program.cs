@@ -88,5 +88,5 @@ Console.WriteLine("Generated Date: {report.GeneratedDate}");
 #endregion
 
 #region NonRepeatCharacters program solution
-Console.WriteLine(NonRepeatChatacters.solution("Koushik"));
+Console.WriteLine(NonRepeatChatacters.Solution("Koushik"));
 #endregion

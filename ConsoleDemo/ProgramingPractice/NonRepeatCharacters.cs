@@ -3,10 +3,10 @@ namespace ConsoleDemo.ProgramingPractice;
 
 public static class NonRepeatChatacters
 {
-  public static char? solution(string inputString)
+  public static char Solution(string inputString)
   {
     Dictionary<char, int> charCount = new Dictionary<char, int>();
-    if (String.IsNullOrEmpty(inputString)) return null;
+    if (String.IsNullOrEmpty(inputString)) return '\0';
     foreach (var ch in inputString)
     {
       if (charCount.ContainsKey(ch))
@@ -24,6 +24,6 @@ public static class NonRepeatChatacters
       if (charCount[ch] == 1) return ch;
     }
 
-    return null;
+    return '\0';
   }
 }
