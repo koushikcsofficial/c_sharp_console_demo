@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleDemo.Logics\ConsoleDemo.csproj" />
+    <ProjectReference Include="..\ConsoleDemo\ConsoleDemo.csproj" />
   </ItemGroup>
 
   <ItemGroup>

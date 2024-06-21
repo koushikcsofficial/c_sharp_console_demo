@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\koush\\source\\repos\\koushikcsofficial\\c_sharp_console_demo\\ConsoleDemo.Logics\\ConsoleDemo.Logics.csproj": {}
+    "C:\\Users\\koush\\source\\repos\\koushikcsofficial\\c_sharp_console_demo\\ConsoleDemo.Logics\\ConsoleDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\koush\\source\\repos\\koushikcsofficial\\c_sharp_console_demo\\ConsoleDemo.Logics\\ConsoleDemo.Logics.csproj": {
+    "C:\\Users\\koush\\source\\repos\\koushikcsofficial\\c_sharp_console_demo\\ConsoleDemo.Logics\\ConsoleDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\koush\\source\\repos\\koushikcsofficial\\c_sharp_console_demo\\ConsoleDemo.Logics\\ConsoleDemo.Logics.csproj",
-        "projectName": "ConsoleDemo.Logics",
-        "projectPath": "C:\\Users\\koush\\source\\repos\\koushikcsofficial\\c_sharp_console_demo\\ConsoleDemo.Logics\\ConsoleDemo.Logics.csproj",
+        "projectUniqueName": "C:\\Users\\koush\\source\\repos\\koushikcsofficial\\c_sharp_console_demo\\ConsoleDemo.Logics\\ConsoleDemo.csproj",
+        "projectName": "ConsoleDemo",
+        "projectPath": "C:\\Users\\koush\\source\\repos\\koushikcsofficial\\c_sharp_console_demo\\ConsoleDemo.Logics\\ConsoleDemo.csproj",
         "packagesPath": "C:\\Users\\koush\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\koush\\source\\repos\\koushikcsofficial\\c_sharp_console_demo\\ConsoleDemo.Logics\\obj\\",
         "projectStyle": "PackageReference",

@@ -7,7 +7,11 @@ using ConsoleDemo.DesignPatterns.Creational.PrototypePattern;
 using ConsoleDemo.DesignPatterns.ComboPatterns.FactoryMethodAndObserver;
 //using ConsoleDemo.DesignPatterns.Creational.FluentBuilderPattern;
 using ConsoleDemo.ProgramingPractice;
-using System.IO;
+using ConsoleDemo.DesignPatterns.ComboPatterns.FactoryMethodAndObserver;
+using ConsoleDemo.DesignPatterns.Creational.AbstractFactory;
+using ConsoleDemo.DesignPatterns.Creational.BuilderPattern;
+using ConsoleDemo.DesignPatterns.Creational.FactoryPattern;
+using ConsoleDemo.ProgramingPractice;
 
 #region Factory Design Pattern example
 ICreditCardFactory factory = new PlatinumFactory(); // Change factory type as needed

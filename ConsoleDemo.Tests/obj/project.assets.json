@@ -6022,8 +6022,8 @@
     },
     "ConsoleDemo/1.0.0": {
       "type": "project",
-      "path": "../ConsoleDemo.Logics/ConsoleDemo.csproj",
-      "msbuildProject": "../ConsoleDemo.Logics/ConsoleDemo.csproj"
+      "path": "../ConsoleDemo/ConsoleDemo.csproj",
+      "msbuildProject": "../ConsoleDemo/ConsoleDemo.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6073,8 +6073,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\koush\\source\\repos\\koushikcsofficial\\c_sharp_console_demo\\ConsoleDemo.Logics\\ConsoleDemo.csproj": {
-              "projectPath": "C:\\Users\\koush\\source\\repos\\koushikcsofficial\\c_sharp_console_demo\\ConsoleDemo.Logics\\ConsoleDemo.csproj"
+            "C:\\Users\\koush\\source\\repos\\koushikcsofficial\\c_sharp_console_demo\\ConsoleDemo\\ConsoleDemo.csproj": {
+              "projectPath": "C:\\Users\\koush\\source\\repos\\koushikcsofficial\\c_sharp_console_demo\\ConsoleDemo\\ConsoleDemo.csproj"
             }
           }
         }
