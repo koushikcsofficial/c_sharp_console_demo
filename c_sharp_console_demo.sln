@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "c_sharp_console_demo", "c_sharp_console_demo.csproj", "{2C87B72A-5E26-407B-AC1A-79F07FDB0C09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDemo.Tests", "..\ConsoleDemo.Tests\ConsoleDemo.Tests.csproj", "{CBA920DB-A2DC-4F22-AECD-11BA0F37D0DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2C87B72A-5E26-407B-AC1A-79F07FDB0C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C87B72A-5E26-407B-AC1A-79F07FDB0C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C87B72A-5E26-407B-AC1A-79F07FDB0C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBA920DB-A2DC-4F22-AECD-11BA0F37D0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA920DB-A2DC-4F22-AECD-11BA0F37D0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA920DB-A2DC-4F22-AECD-11BA0F37D0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA920DB-A2DC-4F22-AECD-11BA0F37D0DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
